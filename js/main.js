@@ -29,24 +29,26 @@ function howdyTwo(myself, greeting) {
 var greeting = howdyTwo('Jeff Stapleton', 'hi!');
 console.log(greeting);
 
-// 6-B **I'm pretty terrible at JS and I have NO CLUE what I'm supposed to be doing here. I've spent hours on B and C with no success
+// 6-B
 
-var numba = function(string) {
+var numba = function (string) {
 
-if (7 > string) {
-    console.log('What a short little word!');
-} else if (7 < string) {
-    console.log("I'm sorry, but that's too many to count.");
-} else if (string == 7) {
-    console.log('7, what a perfect choice!');
-}
+    if (7 > string.length) {
+        console.log('What a short little word!');
+    } else if (7 < string.length) {
+        console.log("I'm sorry, but that's too many to count.");
+    } else if (string.length == 7) {
+        console.log('7, what a perfect choice!');
+    }
 };
 
-var string = ['7', 'seventy', 'university']; //I know this isn't right
+numba('7', 'seventy', 'university'); //I don't think this is fully right. I am struggling with this. I can't tell you the entire logic behind how I got some sort of answer. I just ketp trying things until something finaly worked in the console.
 
 // 6-C
 
 function inception(display, favMovie) {
-    display(favMovie);
+    display(favMovie); //I have NO idea what to do with this
 }
-inception();
+
+inception('The Greatest Showman ', 'is a fantastic movie.');
+console.log(inception());
